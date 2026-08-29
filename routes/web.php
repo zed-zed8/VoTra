@@ -8,7 +8,7 @@ Route::livewire('/', 'pages::home')->name('home');
 Route::get('/logout', function() {
     auth()->guard()->logout();
     return redirect('/');
-})->name('user');
+})->name('logout');
 Route::livewire('/login', 'pages::auth.login')->name('login');
 Route::livewire('/register', 'pages::auth.register')->name('register');
 
