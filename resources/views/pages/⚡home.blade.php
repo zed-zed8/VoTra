@@ -10,5 +10,5 @@ new class extends Component
 ?>
 
 <main>
-    {{-- Very little is needed to make a happy life. - Marcus Aurelius --}}
+    <h1>Welcome to Vocabulary Tracker</h1>
 </main>
