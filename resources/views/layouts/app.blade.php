@@ -19,8 +19,8 @@
 
             <ul>
                 <li><a href="/" wire:navigate>Home</a></li>
-                <li><a href="/vocab-new" wire:navigate>Vocab-New</a></li>
-                <li><a href="/vocab-history" wire:navigate>Vocab-History</a></li>
+                <li><a href="new" wire:navigate>New</a></li>
+                <li><a href="history" wire:navigate>History</a></li>
             </ul>
 
             @if (auth()->check())
