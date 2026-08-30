@@ -12,6 +12,15 @@
     --breakpoint-mobile-l: 25rem;
 }
 
+@utility form-input {
+    @apply p-1 rounded-md ring hover:ring-blue-600 hover:ring-2 
+	focus:outline-blue-400;
+}
+
+@utility link {
+    @apply underline decoration-blue-200 text-blue-200 hover:text-blue-300 hover:decoration-blue-300;
+}
+
 /* =========================================================
    BASE THEME
    ========================================================= */

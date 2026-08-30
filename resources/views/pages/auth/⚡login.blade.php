@@ -32,19 +32,29 @@ new class extends Component
 ?>
 
 <main class="me-3 flex justify-center items-center">
-    <section>
-        <h1>Login</h1>
+    <section class="bg-surface h-fit w-80 md:w-md p-2">
+        <h1 class="text-center text-text-primary mb-10">Login</h1>
 
-        <form wire:submit.prevent='login'>
-            <input type="text" wire:model="name" placeholder="Input name">
-            @error('name') <span class="error">{{ $message }}</span> @enderror
+        <form wire:submit.prevent='login' class="flex flex-col text-text-primary gap-5">
+            <div class="flex flex-col gap-1">
+                <label for="name">Name :</label>
+                <input type="text" wire:model="name" id="name" placeholder="Input name" class="form-input">
+                @error('name') <span class="text-error">{{ $message }}!</span> @enderror
+            </div>
 
-            <input type="password" wire:model="password" placeholder="Input password">
-            @error('password') <span class="error">{{ $message }}</span> @enderror
+            <div class="flex flex-col gap-1">
+                <label for="password">Password :</label>
+                <input type="password" wire:model="password" id="password" placeholder="Input password"
+                    class="form-input">
+                @error('password') <span class="text-error">{{ $message }}!</span> @enderror
+            </div>
 
-            <button type="submit" class="cursor-pointer">Login</button>
+            <button type="submit"
+                class="col-span-2 cursor-pointer bg-primary-800 p-1 rounded-lg hover:bg-primary-700 active:bg-primary-700">Login</button>
         </form>
 
-        <a href="register">Register</a>
+        <div class="text-text-muted text-end">
+            No account? <a href="register" class="link">Register Now</a>
+        </div>
     </section>
 </main>
