@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title ?? config('app.name') }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon_VoTra.svg') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -16,8 +17,14 @@
     <header class="w-screen bg-primary-600">
         <nav class="flex p-2 items-center me-3">
             <div class="flex-1">
-                <a href="/" wire:navigate class="text-purple-400 text-2xl">
-                    <span class="text-primary-200">V</span>o<span class="text-teal-200">T</span>ra
+                <a href="/" wire:navigate class="text-purple-400 text-2xl flex items-center select-none">
+                    {{-- <span class="text-primary-200">V</span> --}}
+                    <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="21" height="26.75" fill="#C27AFF" stroke="#96F7E4" stroke-width="2" />
+                        <path d="M4 3.75L11.6667 19.0833L19.3333 3.75" stroke="#6AECFF" stroke-width="2" />
+                        <path d="M3 24.75L5 23.75L8 24.75H10L12 23.75L14 24.75H17L19 23.75L20 24.75" stroke="#6AECFF"
+                            stroke-width="2" />
+                    </svg>o<span class="text-teal-200">T</span>ra
                 </a>
             </div>
 
