@@ -9,8 +9,8 @@ new class extends Component
 };
 ?>
 
-<main class="h-[38em] me-3 flex justify-center items-center">
-    <section class="bg-background h-full w-full p-2">
+<main class="me-3 mb-5 flex justify-center items-center">
+    <section class="bg-background h-full w-screen px-5">
         <div class="flex justify-center">
             <div class="md:w-lg flex items-center justify-center">
                 <div class="">

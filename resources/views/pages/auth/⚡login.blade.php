@@ -31,7 +31,7 @@ new class extends Component
 };
 ?>
 
-<main>
+<main class="me-3 flex justify-center items-center">
     <section>
         <h1>Login</h1>
 
