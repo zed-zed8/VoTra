@@ -63,8 +63,15 @@ new class extends Component
                 @error('source') <span class="text-error">{{ $message }}!</span> @enderror
             </div>
 
-            <button type="submit"
-                class="cursor-pointer bg-primary-800 p-1 rounded-lg hover:bg-primary-700 active:bg-primary-700">Track</button>
+            <button type="submit" wire:loading.attr='disabled' wire:target='create'
+                class="cursor-pointer bg-primary-800 p-1 rounded-lg hover:bg-primary-700 active:bg-primary-700 disabled:bg-primary-950 disabled:text-text-muted">Track</button>
+            <span class="not-data-loading:hidden flex text-text-muted">
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                    </path>
+                </svg>Tracking progress...</span>
         </form>
     </section>
 </main>
