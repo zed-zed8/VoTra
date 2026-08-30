@@ -54,7 +54,8 @@ new class extends Component
                 </div>
                 <div class="text-text-primary w-full">
                     <a href="new" wire:navigate class="">
-                        <button class="text-center bg-primary-500 rounded-xl p-2 w-full cursor-pointer">
+                        <button
+                            class="text-center bg-primary-500 hover:bg-primary-600 active:bg-primary-600 rounded-xl p-2 w-full cursor-pointer">
                             Get Started →
                         </button>
                     </a>

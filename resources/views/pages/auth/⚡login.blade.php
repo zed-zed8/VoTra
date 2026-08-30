@@ -33,7 +33,7 @@ new class extends Component
 
 <main class="me-3 flex justify-center items-center">
     <section class="bg-surface h-fit w-80 md:w-md p-2">
-        <h1 class="text-center text-text-primary mb-10">Login</h1>
+        <h1 class="text-center text-text-primary mb-8 text-2xl">Login</h1>
 
         <form wire:submit.prevent='login' class="flex flex-col text-text-primary gap-5">
             <div class="flex flex-col gap-1">
@@ -50,7 +50,7 @@ new class extends Component
             </div>
 
             <button type="submit"
-                class="col-span-2 cursor-pointer bg-primary-800 p-1 rounded-lg hover:bg-primary-700 active:bg-primary-700">Login</button>
+                class="cursor-pointer bg-primary-800 p-1 rounded-lg hover:bg-primary-700 active:bg-primary-700">Login</button>
         </form>
 
         <div class="text-text-muted text-end">

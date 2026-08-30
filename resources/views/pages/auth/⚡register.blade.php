@@ -35,7 +35,7 @@ new class extends Component
 
 <main class="me-3 flex justify-center items-center">
     <section class="bg-surface h-fit w-80 md:w-md p-2">
-        <h1 class="text-center text-text-primary mb-10">Register</h1>
+        <h1 class="text-center text-text-primary mb-8 text-2xl">Register</h1>
 
         <form wire:submit.prevent='register' class="flex flex-col text-text-primary gap-5">
             <div class="flex flex-col gap-1">
